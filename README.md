@@ -24,7 +24,16 @@ This is an ecommerce website project created for a class homework assignment, us
 - Install a local web server (e.g. XAMPP, WAMP, MAMP).
 - Copy the project files to the web server directory.
 - Import the database file (myMagazine.sql) into a MySQL database.
-- Update the database configuration file (config.php) with your MySQL database credentials.
+- Update the database configuration file (includes/conn.php) with your MySQL database credentials.
+- admin log in 
+    - admin@admin.com
+    - 123456789
+- customer log in 
+    - rachad@gmail.com
+    - 123456789
+- seller log in 
+    - chaker@gmail.com
+    - 123456789
 
 ## Usage
 
