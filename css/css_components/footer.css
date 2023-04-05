@@ -1,0 +1,161 @@
+/* start variables */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #F9C678;
+    --secondary-color: #FF2D55;
+    --black: #242A37;
+    --grey: #F1F2F6;
+    --green: #4caf50;
+    --paragraph-color: #777;
+    --section-pad: 25px;
+    --main-duration: .3s;
+    --image-size: 300px;
+
+}
+
+/* end variables */
+/* start components  */
+
+a {
+    color: var(--black);
+}
+
+.section {
+    padding-top: var(--section-pad);
+    padding-bottom: var(--section-pad);
+}
+
+/* end components  */
+
+/* start global rules  */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    outline: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--black);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small screens  */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium screens  */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large screens  */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end global rules  */
+
+
+/* start footer  */
+footer {
+    background-color: var(--black);
+    padding-top: 60px;
+    margin-top: 90px;
+}
+
+footer .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+footer .col-md-4 {
+    flex-basis: 33.33%;
+    text-align: left;
+}
+
+footer h4 {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: var(--grey);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer .social-icons li {
+    margin-right: 10px;
+}
+
+footer .social-icons li:last-child {
+    margin-right: 0;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: var(--secondary-color);
+}
+
+footer img {
+    width: 100px;
+}
+
+/* end footer  */

@@ -1,0 +1,467 @@
+/* start variables */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #F9C678;
+    --secondary-color: #FF2D55;
+    --black: #242A37;
+    --grey: #F1F2F6;
+    --paragraph-color: #777;
+    --section-pad: 25px;
+    --main-duration: .3s;
+    --image-size: 250px;
+
+}
+
+/* end variables */
+/* start components  */
+
+a {
+    color: var(--black);
+}
+
+.content {
+    padding-top: var(--section-pad);
+    padding-bottom: var(--section-pad);
+    display: none;
+}
+
+/* end components  */
+
+/* start global rules  */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    outline: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--black);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small screens  */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium screens  */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large screens  */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end global rules  */
+
+/* Global styles */
+/* ================================================================= */
+
+header {
+    background-color: var(--black);
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    background-color: var(--grey);
+
+}
+
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: var(--black);
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    transition: var(--main-duration);
+}
+
+nav a:hover {
+    background-color: var(--black);
+    color: #fff;
+}
+
+main {
+    padding: 100px 30px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* ================================================================= */
+
+#pending-products {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+#pending-products h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#pending-products p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#pending-products ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+#pending-products li {
+    width: 285px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 15px -3px, rgb(0 0 0 / 5%) 0px 4px 6px -2px;
+}
+
+#pending-products ul li img.product-image {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#pending-products li h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+#pending-products li p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.approve-btn,
+.reject-btn,
+.edit-btn,
+.action-btn {
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.approve-btn {
+    background-color: #4CAF50;
+
+}
+
+.reject-btn {
+    background-color: #f00;
+
+}
+
+.edit-btn,
+#product-management .action-btn.edit-btn {
+
+    background-color: #4188ff;
+}
+
+.edit-btn:hover,
+#product-management .action-btn.edit-btn:hover {
+    background-color: #4169e1;
+}
+
+.approve-btn:hover {
+    background-color: #3e8e41;
+}
+
+.reject-btn:hover,
+#product-management .action-btn.reject-btn:hover {
+    background-color: #dc143c;
+
+}
+
+/* ================================================================= */
+
+#performance {
+    padding: 20px 0;
+}
+
+#performance h2 {
+    margin-bottom: 10px;
+}
+
+#performance p {
+    margin-bottom: 20px;
+}
+
+/* ================================================================= */
+
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chart {
+    width: 33%;
+    height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================================================= */
+
+#seller-management .table-container {
+    margin: 20px 0;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#seller-management .table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#seller-management .table thead th {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+}
+
+#seller-management .table tbody td {
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 20px 8px;
+}
+
+
+#seller-management .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#seller-management .table tbody tr:hover {
+    background-color: var(--grey);
+}
+
+/* Button styles */
+
+#seller-management .action-btn.edit-btn {
+    background-color: #007bff;
+}
+
+#seller-management .action-btn.reject-btn {
+    background-color: #dc3545;
+}
+
+#seller-management .action-btn.block-btn {
+    background-color: red;
+}
+
+#seller-management .action-btn.unblock-btn {
+    background-color: #3e8e41;
+}
+
+#seller-management .action-btn.add-btn {
+    background-color: var(--primary-color);
+    color: var(--black);
+}
+
+#seller-management .action-btn {
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+
+
+
+#seller-management .action-btn.edit-btn:hover {
+    background-color: #4169e1;
+}
+
+#seller-management .action-btn.reject-btn:hover {
+    background-color: #dc143c;
+
+}
+
+/* ================================================================ */
+
+#product-management .container {
+    margin: 20px 0;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#product-management img {
+    width: calc(var(--image-size) - 70px);
+    height: calc(var(--image-size) - 90px);
+}
+
+#product-management .products-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#product-management .products-table thead th {
+    background-color: var(--grey);
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+}
+
+#product-management .products-table tbody td {
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 8px;
+}
+
+#product-management .products-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#product-management .products-table tbody tr:hover {
+    background-color: var(--grey);
+}
+
+/* ================================================================= */
+#pricing-guidelines {
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+#pricing-guidelines h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#pricing-guidelines p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#pricing-guidelines form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#pricing-guidelines label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#pricing-guidelines input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#pricing-guidelines button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#pricing-guidelines button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+
+/* ================================================================= */
+
+#settings form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#settings form input[type="text"],
+#settings form input[type="email"],
+#settings form input[type="password"] {
+    border: 1px solid #ccc;
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#settings form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#settings form button[type="submit"]:hover {
+    background-color: #444;
+    cursor: pointer;
+}
+
+
+
+/* ================================================================= */
+
+
+
+footer {
+    padding: 10px 0;
+    background-color: var(--black);
+    color: var(--grey);
+    text-align: center;
+}

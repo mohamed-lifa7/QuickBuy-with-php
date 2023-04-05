@@ -1,0 +1,175 @@
+/* start variables */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #F9C678;
+    --secondary-color: #FF2D55;
+    --black: #242A37;
+    --grey: #F1F2F6;
+    --paragraph-color: #777;
+    --section-pad: 25px;
+    --main-duration: .3s;
+    --image-size: 250px;
+
+}
+
+/* end variables */
+/* start components  */
+
+a {
+    color: var(--black);
+}
+
+.content {
+    padding-top: var(--section-pad);
+    padding-bottom: var(--section-pad);
+    display: none;
+}
+
+
+/* ================================================================= */
+
+nav {
+    padding: 75px 0 0;
+    background-color: var(--grey);
+
+}
+
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: var(--black);
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    transition: var(--main-duration);
+}
+
+nav a:hover {
+    background-color: var(--black);
+    color: #fff;
+}
+
+main {
+    padding: 100px 30px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+
+#products .container {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#products img {
+    width: calc(var(--image-size) - 70px);
+    height: calc(var(--image-size) - 90px);
+}
+
+#products .products-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#products .products-table thead th {
+    background-color: var(--grey);
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+}
+
+#products .products-table tbody td {
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 8px;
+}
+
+#products .products-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#products .products-table tbody tr:hover {
+    background-color: var(--grey);
+}
+
+/* end products */
+/* Style for the seller form section */
+#seller-form .holder {
+    margin: 10px auto;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    max-width: 600px;
+    color: var(--black);
+}
+
+@media (min-width:768px) {
+    #seller-form {
+        width: fit-content;
+    }
+}
+
+#seller-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#seller-form .holder h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+
+}
+
+#seller-form .form-group {
+    margin-bottom: 20px;
+}
+
+#seller-form label {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#seller-form input[type="text"],
+#seller-form input[type="email"],
+#seller-form input[type="tel"],
+#seller-form textarea {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+}
+
+#seller-form select {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+}
+
+#seller-form button[type="submit"] {
+    padding: 10px;
+    font-size: 18px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 20px;
+    align-self: flex-end;
+    letter-spacing: 1px;
+}
+
+/* end main */

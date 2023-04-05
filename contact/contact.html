@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact Us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- normalize css library -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/normalize.css'>
+    <!-- fontAweseme(icons) library -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/all.min.css'>
+    <!-- components css file  -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/css_components/header-footer.css'>
+    <!-- main css file  -->
+    <link rel='stylesheet' type='text/css' media='screen' href='contact.css'>
+</head>
+
+<body>
+    <!-- start header  -->
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo"><img src="../images/logo/logo.png" alt="QuickBuy"></a>
+            <form>
+                <input type="text" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </form>
+            <div class="links">
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul>
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="../signin/login.html">Log in</a></li>
+                    <li><a href="../seller/seller.html">Become a seller</a></li>
+                    <li><a href="../product-detail/cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <!-- end header  -->
+    <!-- start contact -->
+    <section class="section contact">
+        <h1>Contact Us</h1>
+
+        <div class="holder">
+            <div class="row">
+                <div class="column">
+                    <h2>Send us a message</h2>
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="column">
+                    <h2>Get in touch</h2>
+                    <p>Address: 123 Main St, Anytown USA</p>
+                    <p>Phone: 555-555-5555</p>
+                    <p>Email: info@ecommerce.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contact -->
+    <!-- start footer  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>
+                        Shop quick, save time.<br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna libero.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Connect with Us</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <!-- <img src="images/logo/logo-name.png" alt="QuickBuy"> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- start footer  -->
+</body>
+
+</html>

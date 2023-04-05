@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+body {
+    background-color: var(--grey);
+}
+
+.section.main {
+    padding-top: calc(var(--section-pad) + 50px);
+    padding-bottom: var(--section-pad);
+}
+
+/* start cart  */
+.cart {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-title {
+    font-size: 46px;
+    margin: 0 0 40px;
+    text-align: left;
+    font-family: 'Delicious Handrawn', cursive;
+    position: relative;
+}
+
+.cart-title::before {
+    content: '';
+    position: absolute;
+    background-color: var(--black);
+    height: 3px;
+    width: fit-content;
+    bottom: -15px;
+    width: 21%;
+
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.cart-table th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.cart-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    height: 130px;
+
+}
+
+.cart-product {
+    display: flex;
+    align-items: center;
+}
+
+.cart-product-title {
+    font-size: 18px;
+    margin: 0
+}
+
+
+.product-image {
+    max-width: 150px;
+    max-height: 100px;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.cart-price {
+    font-weight: 400;
+    color: var(--black);
+}
+
+.cart-quantity input {
+    width: 50px;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cart-total {
+    font-weight: 400;
+}
+
+.cart-remove {
+    text-align: center;
+}
+
+.cart-remove i {
+    font-size: 32px;
+}
+
+.cart-summary {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: .2s;
+}
+
+.cart-summary:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.cart-summary-title {
+    font-size: 24px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.cart-summary-table {
+    margin-bottom: 12px;
+}
+
+.cart-summary-table tr:last-child {
+    font-weight: bold;
+}
+
+.checkout-button,
+.update-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: .2s;
+    width: fit-content;
+}
+
+.update-button {
+    background-color: #000;
+}
+
+.checkout-button:hover,
+.update-button:hover {
+    background-color: var(--black);
+}
+
+/* end cart  */

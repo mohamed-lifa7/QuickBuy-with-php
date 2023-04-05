@@ -1,0 +1,195 @@
+/* start variables */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #F9C678;
+    --secondary-color: #FF2D55;
+    --black: #242A37;
+    --grey: #F1F2F6;
+    --paragraph-color: #777;
+    --section-pad: 25px;
+    --main-duration: .3s;
+    --image-size: 300px;
+
+}
+
+/* end variables */
+/* start components  */
+
+a {
+    color: var(--black);
+}
+
+
+/* end components  */
+
+/* start global rules  */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    outline: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--black);
+    /* background: var(--grey); */
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small screens  */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium screens  */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large screens  */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end global rules  */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content .logo img {
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.content form h4 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+.content form .email,
+.content form .password{
+    position: relative;
+}
+.content form input[type="email"],
+.content form input[type="password"] {
+    background: transparent;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 17px;
+    position: relative;
+
+}
+
+.content form input[type="email"]+span::after,
+.content form input[type="password"]+span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    background: var(--black);
+
+}
+.content form input[type="email"]:focus+span::after,
+.content form input[type="password"]:focus+span::after{
+    width: 100%;
+}
+.content form input[type="email"]:hover,
+.content form input[type="password"]:hover,
+.content form input[type="email"]:focus,
+.content form input[type="password"]:focus {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.content form .remember {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 30px;
+}
+
+.content form input[type="checkbox"] {
+    width: 20px;
+    margin: 0px 10px;
+}
+
+.content form input[type="submit"] {
+    padding: 12px 70px 12px;
+    border-radius: 24px;
+    display: block;
+    cursor: pointer;
+    margin: 25px auto 10px;
+    background-color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 20px;
+}
+.content form input[type="submit"]:hover{
+    background-color: var(--black);
+    color: var(--grey);
+}
+
+.content form .help {
+    display: flex;
+    flex-direction: column;
+}
+
+.content form .help a {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content form .help .forgot-pswd {
+    text-align: left;
+}
+
+.content form .help .new-acc {
+    text-align: right;
+}

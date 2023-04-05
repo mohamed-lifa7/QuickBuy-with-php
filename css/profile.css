@@ -1,0 +1,221 @@
+main {
+    padding-top: 100px;
+    margin-bottom: -5px;
+
+}
+
+/* ========== Start my Info =================== */
+.my-info,
+.my-orders {
+    border: 1px solid var(--grey);
+    margin-top: 20px;
+    padding: 20px 20px 75px;
+}
+
+.my-info:hover,
+.my-orders:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+.my-info .info {
+    margin: 30px 0;
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+
+
+.my-info .user-info-table {
+    border-collapse: collapse;
+    width: 50%;
+    display: flex;
+    position: absolute;
+    left: 30%;
+}
+
+.my-info .user-info-table th {
+    padding: 8px;
+    text-align: left;
+}
+
+.my-info .user-info-table td {
+    padding: 8px 100px 14px 8px;
+}
+
+.value {
+    display: flex;
+}
+
+.value input {
+    border: none;
+    color: var(--black);
+}
+
+.edit-buttons {
+    position: absolute;
+    right: 10%;
+}
+
+/* ========== End my Info =================== */
+/* ========== Start my Orders =================== */
+
+
+.my-orders table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.my-orders table th,
+.my-orders table td {
+    border: 1px solid #777;
+    padding: 8px;
+    text-align: left;
+}
+
+.my-orders table th {
+    background-color: var(--black);
+    color: var(--grey);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.my-orders table tr:hover {
+    background-color: var(--grey);
+    color: var(--black);
+}
+
+/* ========== End my Orders =================== */
+
+
+.edit-btn,
+.save-btn {
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.save-btn {
+    margin-bottom: 15px;
+}
+
+.edit-btn:hover,
+.save-btn:hover {
+    background-color: #07c;
+}
+
+.edit-btn:focus,
+.save-btn:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.edit-btn:active,
+.save-btn:active {
+    background-color: #0064bd;
+    box-shadow: none;
+}
+
+
+.cancel-btn {
+    background-color: #e1ecf4;
+    border-radius: 3px;
+    border: 1px solid #7aa7c7;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #39739d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.cancel-btn:hover,
+.cancel-btn:focus {
+    background-color: #b3d3ea;
+    color: #2c5777;
+}
+
+.cancel-btn:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.cancel-btn:active {
+    background-color: #a0c7e4;
+    box-shadow: none;
+    color: #2c5777;
+}
+
+
+
+.edit-image {
+    display: none;
+}
+
+
+
+/* ==================================== */
+
+.photo-profile {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+.photo-profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+label.edit-field {
+    cursor: pointer;
+    width: 200px;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(250, 250, 250, .1);
+    padding-bottom: 10px;
+}
+
+label .camera,
+label p {
+    text-align: center;
+    display: block;
+}

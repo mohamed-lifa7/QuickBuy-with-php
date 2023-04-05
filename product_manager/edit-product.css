@@ -1,0 +1,159 @@
+/* start variables */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #F9C678;
+    --secondary-color: #FF2D55;
+    --black: #242A37;
+    --grey: #F1F2F6;
+    --paragraph-color: #777;
+    --section-pad: 25px;
+    --main-duration: .3s;
+    --image-size: 300px;
+
+}
+
+/* end variables */
+/* start components  */
+
+a {
+    color: var(--black);
+}
+
+
+/* end components  */
+
+/* start global rules  */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    outline: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--black);
+    /* background: var(--grey); */
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small screens  */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium screens  */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large screens  */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end global rules  */
+.edit-product-form {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+/* Style the form headings */
+.edit-product-heading {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the form labels */
+.edit-product-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style the form input fields */
+.edit-product-form input[type="text"],
+.edit-product-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+/* Style the form input field when it's in focus */
+.edit-product-form input[type="text"]:focus,
+.edit-product-form textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+/* Style the form submit button */
+.edit-product-form input[type="submit"] {
+    background-color: #F9C678;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Style the form submit button on hover */
+.edit-product-form input[type="submit"]:hover {
+    background-color: #FF2D55;
+}
+
+.edit-product-form .form-group {
+    position: relative;
+}
+
+.edit-product-form span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 13px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    background: var(--black);
+}
+
+.edit-product-form input:focus+span::after,
+.edit-product-form textarea:focus+span::after {
+    width: 100%;
+}
